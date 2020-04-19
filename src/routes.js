@@ -10,7 +10,7 @@ const BookingControle = require('./controllers/BookingController');
 const routes = express.Router();
 const upload = multer(uploadConfig);
 
-routes.post('/', function(req, res) {
+routes.get('/', function(req, res) {
   res.send("BackEnd")
 });
 
