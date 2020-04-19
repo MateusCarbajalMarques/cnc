@@ -15,6 +15,6 @@ const SpotSchema = new mongoose.Schema({
 });
 
 SpotSchema.virtual('thumbnail_url').get(function(){
-    return `http://aircncnode.herokuapp.com/files/${this.thumbnail}`
+    return `https://cnc-backend.herokuapp.com/files/${this.thumbnail}`
 });
 module.exports = mongoose.model('Spot', SpotSchema);
